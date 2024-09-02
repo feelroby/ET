@@ -23,7 +23,7 @@ html {
   
 body {
     box-sizing: border-box;
-    background-image: url(img/1.png) ;
+    background-image: url(./img/1.png) ;
     background-size: cover;
     overflow-x: hidden;
     width: 100vw;
