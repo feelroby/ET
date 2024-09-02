@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #003848;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #003848;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00a0cd;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: start;
+    gap: 100px;
+    padding-left: 24px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+
+.container-logo h2 {
+    font-size: 2rem;
+    color: #F3F7EC;
+}
+
+
+/* SECTION 1 */
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: oblique;
+    font-size: 1.8rem;
+    color: #F3F7EC;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 10px;
+}
+
+.section-1 p {
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.section-1 h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    .section-1 h1 {
+        text-align: left;
+    }
+
+    .section-1 p {
+        width: 100%;
+    }
+
+    .section-1 {
+        margin-top: 0;
+    }
+}
+
+.section-2 {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: #00000051;
+    padding: 34px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    transition: box-shadow 0.7s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.box:hover {
+    box-shadow: 0px 1px 16px 0.3px #ffffff;
+}
+
+.container-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.subject-list {
+    /* display: none; Menyembunyikan list secara default */
+    list-style-type: none; /* Menghilangkan bullet points */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffdf;
+    font-family: sans-serif;
+    font: caption;
+    transition: display 1s ease-in-out;
+    max-height: 0; /* Mulai dengan height 0 */
+    overflow: hidden; /* Sembunyikan konten yang keluar dari list */
+    transition: max-height 0.5s ease-in-out; /* Transisi halus */
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 0.3px #ffffff5d;
+    font-size: 1rem;
+}
+
+.subject-list.open {
+    max-height: 200px; /* Set max-height ke nilai yang cukup untuk menampilkan semua item */
+}
+
+.subject-list li {
+    margin-left: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 24px;
+}
+
+.toggle-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.toggle-button:focus {
+    outline: none;
+    box-shadow: 0px 1px 16px 0.5px #ffffff;
+}
+
+.toggle-button:hover {
+    box-shadow: 0px 1px 16px 0.5px #ffffff;
+}
+
+@media (max-width:900px) {
+    .container-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
