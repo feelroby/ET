@@ -177,3 +177,84 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var navbar = document.getElementById("navbar");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            const offsetPosition = targetElement.offsetTop - 100; // Sesuaikan dengan jarak yang diinginkan
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.ul-nav a');
+
+    function changeNav() {
+        let index = sections.length;
+
+        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+
+        navLinks.forEach(link => link.classList.remove('active'));
+        if (index >= 0) {
+            navLinks.forEach(link => {
+                if (link.getAttribute('data-target') === sections[index].id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    }
+
+    // Tambahkan event listener untuk scroll
+    window.addEventListener('scroll', changeNav);
+
+    // Tambahkan event listener untuk mengupdate saat dokumen di-load
+    changeNav();
+});
+
+
+window.addEventListener('scroll', function() {
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('nav a');
+    
+    sections.forEach(function(section) {
+      let rect = section.getBoundingClientRect();
+      let id = section.getAttribute('id');
+  
+      if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  });
+  
+
+
+
+

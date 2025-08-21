@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ET Project</title>
+    <title>ET Insight</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/fav_fix.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+     <script src="script.js"></script>
+
 </head>
 
 <body>
 
     
 
-    <!-- <video autoplay loop muted playsinline>
-        <source src="asset/img/Dark Background Web.mp4" type="video/mp4">
-      </video> -->
 
    <!-- NAVBAR -->
-    <nav class="navigation">
-        <div class="container-logo">
+    <nav class="navigation" id="navbar">
+        <div class="container-logo" >
             <img src="img/magnifying-glass.svg" width="35px" style="max-width: 100%;">
             <h2>ET Insight</h2>
         </div>
@@ -32,10 +37,11 @@
         </div>
         <ul class="ul-nav">
             <div class="close-icon" onclick="toggleMenu()">&times;</div> 
-            <li class="li-nav"><a href="#home" onclick="toggleMenu()">Home</a></li>
-            <li class="li-nav"><a href="#work-program" onclick="toggleMenu()">Work Program</a></li>
-            <li class="li-nav"><a href="#about-us" onclick="toggleMenu()">About Us</a></li>
-            <li class="li-nav"><a href="#gallery" onclick="toggleMenu()">The Gallery</a></li>
+            <li class="li-nav"><a href="#home" onclick="toggleMenu()" data-target="home">Home</a></li>
+            <li class="li-nav"><a href="#work-program" onclick="toggleMenu()" data-target="work-program">Work Program</a></li>
+            <li class="li-nav"><a href="#about-us" onclick="toggleMenu()" data-target="about-us">About Us</a></li>
+            <li class="li-nav"><a href="#gallery" onclick="toggleMenu()" data-target="gallery">The Gallery</a></li>
+            <li class="li-nav wappim-hub"><a href="https://economictraining.github.io/WAPPIM/" onclick="toggleMenu()" target="_blank">WAPPIM HUB</a></li>
         </ul>
     </nav>
     <!-- NAVBAR SELESAI -->
@@ -46,7 +52,7 @@
     <main>
        
         <!-- SECTION 1 -->
-        <div class="container-1">
+        <section class="container-1" id="home">
             <div class="container-text">
                 <h1 class="h1">Bidang III</h1>
                 <h1 class="h1">Economic Training (ET) of WAPPIM</h1>
@@ -54,17 +60,12 @@
                     di UKM WAPPIM STIE Malangkucecwara, yang fokus pada bidang ekonomi.</p1>
             </div>
             <div class="container-img">
-<<<<<<< HEAD
-                <img src="./img/logo.jpg" width="100%" class="logo">
-=======
-                <img src="./img/logo.JPG" width="100%" class="logo">
->>>>>>> 17da8e70b8fea195f457b6da534045c999326a7e
-                <div class="garis"></div>
+                <img src="./img/logo_fixfix.png" width="80%" class="logo" loading="lazy" decoding="async">
+                <!-- <div class="garis"></div> -->
             </div>
-        </div>
+        </section>
         <!-- SECTION 1 SELESAI -->
     
-<<<<<<< HEAD
     
         
         <!-- SECTION 2 -->
@@ -92,31 +93,44 @@
         </div>
 
         <!-- Section 3 -->
-         <div class="section-3" id="work-program">
+         <section class="section-3" id="work-program">
             <div class="Title-3">
                 <h1>What Our Offerings</h1>
                 <p1>UEZET (Ujian EZ with ET)</p1>
             </div>
+           
+             <div class="container-3-3"></div>
+                <div class="box et">
+                    <h1>ET Private Chat</h1>
+                    <p1>ET Private Chat hadir spesial buat maba yang lagi beradaptasi dengan lingkungan perkuliahan. <br>
+                    Kesusahan ngerjain tugas atau hal lain?<br>
+                    Chat kita sekarang!
+                    </p1>
+                   <a href="page/ET Private/index.html"><div class="button"><img src="img/whatsapp.svg" width="38px" loading="lazy"></div></a>
+                </div>
+            </div>
+           
+           
             <div class="container-3">
-                <div class="box">
+                <!-- <div class="box">
                     <h1>Resume</h1>
                     <p1>Resume mata kuliah untuk persiapan ujian.
                         Bisa tinggal diprint out waktu matkul openbook 😎
                     </p1>
-                   <a href="Page/Resume/resume.html"><div class="button"><img src="img/right-arrow.svg" width="40px"></div></a>
-                </div>
+                   <a href="Page/Resume/resume.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
+                </div> -->
                 <div class="box">
                     <h1>PO Bank Soal</h1>
                     <p1>Mau ujian bingung belajar darimana? <br>
                         Cobain bank soal andalan mahasiswa ABM untuk persiapan ujian</p1>
-                   <a href="Page/Po Bank Soal/soal.html"><div class="button"><img src="img/right-arrow.svg" width="40px"></div></a>
+                   <a href="page/PO BankSoal/index.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
                 </div>
                 <div class="box">
                     <h1>Pembahasan Bank Soal</h1>
                     <p1>Udah beli bank soal tapi bingung ngerjainnya?
                         Cocokin ajaa sama pembahasan bank soal dari kitaa
                     </p1>
-                   <a href="Page/Pembahasan/pembahasan.html"><div class="button"><img src="img/right-arrow.svg" width="40px"></div></a>
+                   <a href="page/Pembahasan/pembahasan.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
                 </div>
             </div>
                 <!-- Grid Two -->
@@ -126,28 +140,20 @@
                     <p1>Kesusahan di mata kuliah tertentu? <br>
                         Yukk belajar bareng sama temen temen kelas lain buat kuatin pondasi pemahaman dari sudut pandang lain
                     </p1>
-                  <a href="Page/Tentir Rutin/tentir.html"><div class="button"><img src="img/right-arrow.svg" width="40px"></div></a>
+                  <a href="page/Tentir Rutin/index.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
                 </div>
                 <div class="box">
                     <h1>Tentir Before Exam</h1>
                     <p1>Jurus pamukas terakhir sebelum menghadapi ujian <br>
                         Kerjain bareng soal-soal yang kemungkinan keluar di ujian besok!    
                     </p1>
-                   <a href="Page/Exam/exam.html"><div class="button"><img src="img/right-arrow.svg" width="40px"></div>
+                   <a href="page/Tentir Exam/index.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div>
                     </a>
                 </div>
             </div>
                 <!-- grid three -->
-            <div class="container-3-3">
-                <div class="box">
-                    <h1>ET Private Chat</h1>
-                    <p1>Need Help di matkul atau hal lain? 🏳️ <br>
-                        ET Private Chat hadir spesial untuk maba yang lagi adaptasi di perkuliahan! Chat kita ajaa
-                    </p1>
-                   <a href="Page/ET Private Chat/index.html" target="_blank"><div class="button"><img src="img/whatsapp.svg" width="38px"></div></a>
-                </div>
-            </div>
-        </div>
+           
+        </section>
         
 
         <!-- SECTION 4 -->
@@ -159,25 +165,25 @@
                 <!-- Grid Two -->
             <div class="container-3-2">    
                 <div class="box">
-                    <h1>ET Engange</h1>
+                    <h1>ET Engage</h1>
                     <p1>Forum diskusi yang aktif dan interaktif, bertujuan sharing value antar mahasiswa yang menekankan komunikasi 2 arah. Namun tetap dipimpin oleh penyaji materi yang ahli (sepuh) <p1>
-                  <a href="Page/ET Engange/index.html"><div class="button"><img src="img/social-engagement.svg" width="40px"></div>
+                  <a href="page/ET Engange/index.html"><div class="button"><img src="img/social-engagement.svg" width="40px" loading="lazy"></div>
                 </a></div>
                 <div class="box">
                     <h1>WAPPIM Mengajar</h1>
                     <p1>Yang ditunggu-tunggu <br>
                         Ayo nikmatin pengalaman seru tak terlupakan dengan adik-adik yang membutuhkan
                     </p1>
-                  <a href="Page/WAPPIM Mengajar/index.html"><div class="button"><img src="img/teacher.svg" width="40px"></div>
+                  <a href="page/WAPPIM Mengajar/index.html"><div class="button"><img src="img/teacher.svg" width="40px" loading="lazy"></div>
                     </a>
                 </div>
             </div>
 
 
         <!-- SECTION-5 -->
-        <div class="section-6" id="about-us">
+        <section class="section-6" id="about-us">
             <div class="container-6-1">
-                <img src="img/DSC01971.png" width="100%">
+                <img src="img/DSC01971.webp" width="100%" loading="lazy" decoding="async">
                 <div class="garisx"></div>
                 <p1>Staff ET Periode 2024/2025</p1>
             </div>
@@ -186,7 +192,7 @@
                 <p1>Kenalin kita berempat adalah staff ET periode 2024/2025, see u at wappim temen-temen (Roby, Anita, Sherlyta, Laila)</p1>
                 <div class="box-6">
                     <div class="container-logo-visi">
-                        <img src="img/thunder.svg" class="logo-proker">
+                        <img src="img/thunder.svg" class="logo-proker" loading="lazy" decoding="async">
                     </div>
                     <h1>Visi</h1>
                     <p1>Menjadikan Bidang III Economic Training (ET) sebagai fasilitas 
@@ -196,10 +202,39 @@
                         perkuliahan dan memberikan feedback yang relevan serta signifikan</p1>
                 </div>
             </div>
-        </div>
+        </section>
         
     <!-- SECTION 7 -->
-        <div class="section-7">
+
+
+
+    <section class="section-anggota" id="gallery">
+        <h1>Keluarga Economic Training '24 ✨</h1>
+        <div class="container-anggota">
+            <div class="container-gambar">
+                <img src="./album/keluarga.jpg" class="jumbo">
+                <p class="motto">Haloooo coba pencet setiap gambar di bawah buat lebih kenal doi xixi
+                </p>
+            </div>
+                
+            <div class="thumbnail">
+                <img src="./album/kezhia.jpg" alt="" id="1" class="thumb">
+                <img src="./album/fery.jpg" alt="" id="2" class="thumb">
+                <img src="./album/neta.jpg" alt="" id="3" class="thumb">
+                <img src="./album/syafa.jpg" alt="" id="4" class="thumb">
+                <img src="./album/ulfa.jpg" alt="" id="5" class="thumb">
+                <img src="./album/zahra.jpg" alt="" id="6" class="thumb">
+                <img src="./album/chelsea.jpg" alt="" id="7"  class="thumb">
+                <img src="./album/keyran.jpg" alt="" id="8" class="thumb">
+                <img src="./album/berliana.jpg" alt="" id="9" class="thumb">
+                <img src="./album/3500_6_05.jpg" alt="" id="10" class="thumb">
+                <img src="./album/micko.jpg" alt="" id="11" class="thumb">
+                <img src="./album/8948141.jpg" alt="" id="12" class="thumb">
+            </div>
+        </div>
+    </section>
+
+            <div class="section-7">
             <div class="container-kritik">
                 <div class="box-2">
                     <h1>Kritik & Saran</h1>
@@ -209,74 +244,91 @@
                 </div>
             </div>
             <div class="container-imgfeed">
-                <img src="img/feedback.svg" width="250px">
+                <img src="img/feedback.svg" width="250px" loading="lazy">
             </div>
         </div>
 
 
+
     <!-- SECTION END "GALERY" -->
-    <div class="container-wappimhere" id="gallery">
+    <section class="container-wappimhere" id="gallery">
         <div class="container-here">
-            <h1 class="h1" style="color: #8ca1ff; text-shadow:  1px 3px rgba(255, 255, 255, 0.2)">The Gallery</h1>
+            <h1 class="h1" style="color: #ffffff; text-shadow:  1px 3px rgba(255, 255, 255, 0.2)">The Gallery</h1>
         </div>
 
         <div class="Keterangan">"Everything about Economic Training Memories"</div>
         <div class="container-gallery">
+           
             <div class="gallery-item">
-                <img src="Gallery/20240120_122355.jpg">
+                <img src="Gallery/20240120_122355.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Gallery/IMG-20240225-WA0037.jpg">
+                <img src="Gallery/IMG-20240225-WA0037.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Gallery/IMG_1550.jpg">
+                <img src="Gallery/IMG_1550.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/IMG-20231222-WA0040 (1).jpg">
+                <img src="Landscape/IMG-20231222-WA0040 (1).webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="/Landscape/IMG-20240706-WA0051.jpg">
+                <img src="./Landscape/IMG-20240706-WA0051.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/IMG20240120090149.jpg">
+                <img src="Landscape/IMG20240120090149.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/IMG_0708.jpg">
+                <img src="Landscape/IMG_0708.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/IMG_4654.jpg">
+                <img src="Landscape/IMG_4654.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/IMG_4665.jpg">
+                <img src="Landscape/IMG_4665.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/IMG_5447.jpg">
+                <img src="Landscape/IMG_5447.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/WhatsApp Image 2024-08-31 at 00.04.31_8073acf7.jpg">
+                <img src="Landscape/WhatsApp Image 2024-08-31 at 00.04.31_8073acf7.webp" loading="lazy" decoding="async">
             </div>
             <div class="gallery-item">
-                <img src="Landscape/WhatsApp Image 2024-08-31 at 00.04.31_bddab725.jpg">
+                <img src="Landscape/WhatsApp Image 2024-08-31 at 00.04.31_bddab725.webp" loading="lazy" decoding="async">
+            </div>
+            <div class="gallery-item">
+                <img src="Gallery/999.webp" loading="lazy" decoding="async">
+                <div class="caption">Staff ET Periode 22/23</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Gallery/img3.webp" loading="lazy" decoding="async">
+                <div class="caption">Staff ET Periode 23/24</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Gallery/dsc1.webp" loading="lazy" decoding="async">
+                <div class="caption">Staff ET Periode 24/25</div>
             </div>
         </div>
-    </div>
-        <section class="upcoming">
+    </section>
+        <!-- <section class="upcoming">
             <h1>UPCOMING EVENT BY UKM WAPPIM</h1>
             <container>
                 <div class="box">
                     <h1>Welcoming Party</h1>
-                    <!-- <div class="gallery-item">
-                        <img src="asset/Gallery/20240120_122355.jpg">
-                    </div> -->
-                    <h2>Coming soon...</h2>
+                    <a href="https://economictraining.github.io/welcoming-party/">
+                        <div class="gallery-item">
+                            <img src="img/posterwp.PNG">
+                        </div>
+                    </a>
                 </div>
                 <div class="box">
                     <h1>Pendidikan dan Pelatihan Dasar XXXI</h1>
-                    <div class="gallery-item">
-                        <img src="./img/poster.jpg">
-                    </div>
+                    <a href="https://economictraining.github.io/Diksar-31/" target="_blank">
+                        <div class="gallery-item">
+                            <img src="./img/poster_diksar.png" loading="lazy" decoding="async">
+                        </div>
+                    </a>
                 </div>
-            </container>
+            </container> -->
         </section>
     </main>
 
@@ -292,8 +344,7 @@
         </div>
     </footer>
     
-=======
->>>>>>> 17da8e70b8fea195f457b6da534045c999326a7e
+   <script src="js.js"></script>
 </body>
 
 </html>
