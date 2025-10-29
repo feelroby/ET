@@ -1,350 +1,569 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ET Insight</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <title>Clovera Learn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="img/fav_fix.png" type="image/png" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-     <script src="script.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    
-
-
-   <!-- NAVBAR -->
-    <nav class="navigation" id="navbar">
-        <div class="container-logo" >
-            <img src="img/magnifying-glass.svg" width="35px" style="max-width: 100%;">
-            <h2>ET Insight</h2>
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="ul-nav">
-            <div class="close-icon" onclick="toggleMenu()">&times;</div> 
-            <li class="li-nav"><a href="#home" onclick="toggleMenu()" data-target="home">Home</a></li>
-            <li class="li-nav"><a href="#work-program" onclick="toggleMenu()" data-target="work-program">Work Program</a></li>
-            <li class="li-nav"><a href="#about-us" onclick="toggleMenu()" data-target="about-us">About Us</a></li>
-            <li class="li-nav"><a href="#gallery" onclick="toggleMenu()" data-target="gallery">The Gallery</a></li>
-            <li class="li-nav wappim-hub"><a href="https://economictraining.github.io/WAPPIM/" onclick="toggleMenu()" target="_blank">WAPPIM HUB</a></li>
-        </ul>
-    </nav>
-    <!-- NAVBAR SELESAI -->
-    
-    
-    
-    <!-- MAIN -->
-    <main>
-       
-        <!-- SECTION 1 -->
-        <section class="container-1" id="home">
-            <div class="container-text">
-                <h1 class="h1">Bidang III</h1>
-                <h1 class="h1">Economic Training (ET) of WAPPIM</h1>
-                <p1 class="p1">Economic Training atau disingkat ET, merupakan salah satu dari 3 bidang pendidikan
-                    di UKM WAPPIM STIE Malangkucecwara, yang fokus pada bidang ekonomi.</p1>
+    <header class="site-header" id="home">
+        <nav class="navbar">
+            <a class="brand" href="#home">
+                <img src="img/fav_fix.png" alt="Logo Clovera Learn" class="brand-logo">
+                <span>Clovera Learn</span>
+            </a>
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#courses">Kursus</a></li>
+                <li><a href="#competitions">Platform Lomba</a></li>
+                <li><a href="#marketplace">Lapak Tutor</a></li>
+                <li><a href="#stories">Testimoni</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="ghost-button">Masuk</button>
+                <button class="primary-button">Daftar</button>
             </div>
-            <div class="container-img">
-                <img src="./img/logo_fixfix.png" width="80%" class="logo" loading="lazy" decoding="async">
-                <!-- <div class="garis"></div> -->
-            </div>
-        </section>
-        <!-- SECTION 1 SELESAI -->
-    
-    
-        
-        <!-- SECTION 2 -->
-        <div class="section-2">
-            <div class="container-2">
-                <ul class="ul-sec2">
-                    <li class="li-sec2">
-                        <h2 data-target="5">1</h2>
-                        <p1>Program Kerja</p1>
-                    </li>
-                    <li class="li-sec2">
-                        <h2 data-target="200">1</h2>
-                        <p1>Terlaksana</p1>
-                    </li>
-                    <li class="li-sec2">
-                        <h2 data-target="500">1</h2>
-                        <p1>Feedback</p1>
-                    </li>
-                    <li class="li-sec2">
-                        <h2 data-target="20">1</h2>
-                        <p1>Years</p1>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </nav>
 
-        <!-- Section 3 -->
-         <section class="section-3" id="work-program">
-            <div class="Title-3">
-                <h1>What Our Offerings</h1>
-                <p1>UEZET (Ujian EZ with ET)</p1>
-            </div>
-           
-             <div class="container-3-3"></div>
-                <div class="box et">
-                    <h1>ET Private Chat</h1>
-                    <p1>ET Private Chat hadir spesial buat maba yang lagi beradaptasi dengan lingkungan perkuliahan. <br>
-                    Kesusahan ngerjain tugas atau hal lain?<br>
-                    Chat kita sekarang!
-                    </p1>
-                   <a href="page/ET Private/index.html"><div class="button"><img src="img/whatsapp.svg" width="38px" loading="lazy"></div></a>
+        <section class="hero">
+            <div class="hero-text">
+                <span class="badge">Belajar versi terbaikmu</span>
+                <h1>Platform pembelajaran terpadu untuk generasi yang haus eksplorasi.</h1>
+                <p>Clovera Learn menggabungkan kelas interaktif, kompetisi bergengsi, dan marketplace tutor dalam satu ekosistem.
+                    Temukan ritme belajar yang sesuai dengan tujuanmu.</p>
+                <div class="hero-actions">
+                    <a class="primary-button" href="#courses">Mulai Belajar</a>
+                    <a class="ghost-button" href="#competitions">Telusuri Lomba</a>
                 </div>
-            </div>
-           
-           
-            <div class="container-3">
-                <!-- <div class="box">
-                    <h1>Resume</h1>
-                    <p1>Resume mata kuliah untuk persiapan ujian.
-                        Bisa tinggal diprint out waktu matkul openbook 😎
-                    </p1>
-                   <a href="Page/Resume/resume.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
-                </div> -->
-                <div class="box">
-                    <h1>PO Bank Soal</h1>
-                    <p1>Mau ujian bingung belajar darimana? <br>
-                        Cobain bank soal andalan mahasiswa ABM untuk persiapan ujian</p1>
-                   <a href="page/PO BankSoal/index.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
-                </div>
-                <div class="box">
-                    <h1>Pembahasan Bank Soal</h1>
-                    <p1>Udah beli bank soal tapi bingung ngerjainnya?
-                        Cocokin ajaa sama pembahasan bank soal dari kitaa
-                    </p1>
-                   <a href="page/Pembahasan/pembahasan.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
-                </div>
-            </div>
-                <!-- Grid Two -->
-            <div class="container-3-2">    
-                <div class="box">
-                    <h1>Tentir Rutin</h1>
-                    <p1>Kesusahan di mata kuliah tertentu? <br>
-                        Yukk belajar bareng sama temen temen kelas lain buat kuatin pondasi pemahaman dari sudut pandang lain
-                    </p1>
-                  <a href="page/Tentir Rutin/index.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div></a>
-                </div>
-                <div class="box">
-                    <h1>Tentir Before Exam</h1>
-                    <p1>Jurus pamukas terakhir sebelum menghadapi ujian <br>
-                        Kerjain bareng soal-soal yang kemungkinan keluar di ujian besok!    
-                    </p1>
-                   <a href="page/Tentir Exam/index.html"><div class="button"><img src="img/right-arrow.svg" width="40px" loading="lazy"></div>
-                    </a>
-                </div>
-            </div>
-                <!-- grid three -->
-           
-        </section>
-        
-
-        <!-- SECTION 4 -->
-        <div class="section-3x">
-            <div class="Title-3x">
-                <h1>Program Kerja Lainnya</h1>
-            </div>
-            </div>
-                <!-- Grid Two -->
-            <div class="container-3-2">    
-                <div class="box">
-                    <h1>ET Engage</h1>
-                    <p1>Forum diskusi yang aktif dan interaktif, bertujuan sharing value antar mahasiswa yang menekankan komunikasi 2 arah. Namun tetap dipimpin oleh penyaji materi yang ahli (sepuh) <p1>
-                  <a href="page/ET Engange/index.html"><div class="button"><img src="img/social-engagement.svg" width="40px" loading="lazy"></div>
-                </a></div>
-                <div class="box">
-                    <h1>WAPPIM Mengajar</h1>
-                    <p1>Yang ditunggu-tunggu <br>
-                        Ayo nikmatin pengalaman seru tak terlupakan dengan adik-adik yang membutuhkan
-                    </p1>
-                  <a href="page/WAPPIM Mengajar/index.html"><div class="button"><img src="img/teacher.svg" width="40px" loading="lazy"></div>
-                    </a>
-                </div>
-            </div>
-
-
-        <!-- SECTION-5 -->
-        <section class="section-6" id="about-us">
-            <div class="container-6-1">
-                <img src="img/DSC01971.webp" width="100%" loading="lazy" decoding="async">
-                <div class="garisx"></div>
-                <p1>Staff ET Periode 2024/2025</p1>
-            </div>
-            <div class="container-6-2">
-                <h1>Haloooo</h1>
-                <p1>Kenalin kita berempat adalah staff ET periode 2024/2025, see u at wappim temen-temen (Roby, Anita, Sherlyta, Laila)</p1>
-                <div class="box-6">
-                    <div class="container-logo-visi">
-                        <img src="img/thunder.svg" class="logo-proker" loading="lazy" decoding="async">
+                <dl class="hero-metrics">
+                    <div>
+                        <dt>45K+</dt>
+                        <dd>Pelajar aktif</dd>
                     </div>
-                    <h1>Visi</h1>
-                    <p1>Menjadikan Bidang III Economic Training (ET) sebagai fasilitas 
-                        akademik dan wadah pengembangan diri yang mendukung pencapaian 
-                        prestasi akademik serta pengembangan hard skill, soft skill dan segala 
-                        potensi mahasiswa melalui program-program yang linear dengan 
-                        perkuliahan dan memberikan feedback yang relevan serta signifikan</p1>
+                    <div>
+                        <dt>1.200+</dt>
+                        <dd>Tutor terverifikasi</dd>
+                    </div>
+                    <div>
+                        <dt>320</dt>
+                        <dd>Kompetisi per tahun</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <h3>Agenda Hari Ini</h3>
+                    <ul>
+                        <li>
+                            <span class="time">08.00</span>
+                            <span class="name">Live Class Strategi Bisnis</span>
+                        </li>
+                        <li>
+                            <span class="time">10.30</span>
+                            <span class="name">Coaching Klinik Matematika</span>
+                        </li>
+                        <li>
+                            <span class="time">19.00</span>
+                            <span class="name">Diskusi Finalis UI/UX Challenge</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="floating-card highlight">
+                    <h3>Progress Mingguan</h3>
+                    <p>Kamu menuntaskan 5 dari 7 target belajar minggu ini. Pertahankan momentum!</p>
                 </div>
             </div>
         </section>
-        
-    <!-- SECTION 7 -->
+    </header>
 
+    <main>
+        <section class="portals" aria-labelledby="portal-title">
+            <div class="section-heading">
+                <h2 id="portal-title">Tiga pintu utama Clovera Learn</h2>
+                <p>Pilih jalur yang kamu butuhkan hari ini. Semuanya tersambung dalam satu akun.</p>
+            </div>
+            <div class="portal-grid">
+                <a class="portal-card" href="#courses">
+                    <div class="icon-circle">🎓</div>
+                    <h3>Kursus</h3>
+                    <p>Dasbor personal dengan mata pelajaran, materi rekaman, sesi live, dan progress belajar real-time layaknya Ruangguru.</p>
+                    <span class="link-label">Masuk ke dasbor kursus</span>
+                </a>
+                <a class="portal-card" href="#competitions">
+                    <div class="icon-circle">🏆</div>
+                    <h3>Platform Lomba</h3>
+                    <p>Feed seperti media sosial untuk mengeksplor kompetisi terbaru lengkap dengan fitur sortir, reminder, dan highlight juara.</p>
+                    <span class="link-label">Telusuri kompetisi</span>
+                </a>
+                <a class="portal-card" href="#marketplace">
+                    <div class="icon-circle">🧑‍🏫</div>
+                    <h3>Lapak Tutor</h3>
+                    <p>Marketplace tutor dengan katalog, rating, paket belajar, dan jadwal fleksibel untuk setiap kebutuhan.</p>
+                    <span class="link-label">Cari tutor terbaik</span>
+                </a>
+            </div>
+        </section>
 
-
-    <section class="section-anggota" id="gallery">
-        <h1>Keluarga Economic Training '24 ✨</h1>
-        <div class="container-anggota">
-            <div class="container-gambar">
-                <img src="./album/keluarga.jpg" class="jumbo">
-                <p class="motto">Haloooo coba pencet setiap gambar di bawah buat lebih kenal doi xixi
-                </p>
+        <section class="section" id="courses" aria-labelledby="courses-title">
+            <div class="section-heading">
+                <h2 id="courses-title">Kursus – Dasbor belajar ala Ruangguru</h2>
+                <p>Kelola seluruh aktivitas belajarmu dalam satu layar: progres, mata pelajaran, jadwal live class, hingga rekomendasi mentor.</p>
             </div>
-                
-            <div class="thumbnail">
-                <img src="./album/kezhia.jpg" alt="" id="1" class="thumb">
-                <img src="./album/fery.jpg" alt="" id="2" class="thumb">
-                <img src="./album/neta.jpg" alt="" id="3" class="thumb">
-                <img src="./album/syafa.jpg" alt="" id="4" class="thumb">
-                <img src="./album/ulfa.jpg" alt="" id="5" class="thumb">
-                <img src="./album/zahra.jpg" alt="" id="6" class="thumb">
-                <img src="./album/chelsea.jpg" alt="" id="7"  class="thumb">
-                <img src="./album/keyran.jpg" alt="" id="8" class="thumb">
-                <img src="./album/berliana.jpg" alt="" id="9" class="thumb">
-                <img src="./album/3500_6_05.jpg" alt="" id="10" class="thumb">
-                <img src="./album/micko.jpg" alt="" id="11" class="thumb">
-                <img src="./album/8948141.jpg" alt="" id="12" class="thumb">
-            </div>
-        </div>
-    </section>
-
-            <div class="section-7">
-            <div class="container-kritik">
-                <div class="box-2">
-                    <h1>Kritik & Saran</h1>
-                    <p1 class="h2">Kritik dan saran dari kalian sangat berharga bagi kami</p1>
-                    <a href="https://forms.gle/JsvqjsPgAU8me3h17" target="_blank"><div class="button-kritik"><h4 class="button-text">Touch me</h4></div>
-                        </a>
-                </div>
-            </div>
-            <div class="container-imgfeed">
-                <img src="img/feedback.svg" width="250px" loading="lazy">
-            </div>
-        </div>
-
-
-
-    <!-- SECTION END "GALERY" -->
-    <section class="container-wappimhere" id="gallery">
-        <div class="container-here">
-            <h1 class="h1" style="color: #ffffff; text-shadow:  1px 3px rgba(255, 255, 255, 0.2)">The Gallery</h1>
-        </div>
-
-        <div class="Keterangan">"Everything about Economic Training Memories"</div>
-        <div class="container-gallery">
-           
-            <div class="gallery-item">
-                <img src="Gallery/20240120_122355.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Gallery/IMG-20240225-WA0037.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Gallery/IMG_1550.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/IMG-20231222-WA0040 (1).webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="./Landscape/IMG-20240706-WA0051.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/IMG20240120090149.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/IMG_0708.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/IMG_4654.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/IMG_4665.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/IMG_5447.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/WhatsApp Image 2024-08-31 at 00.04.31_8073acf7.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Landscape/WhatsApp Image 2024-08-31 at 00.04.31_bddab725.webp" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-item">
-                <img src="Gallery/999.webp" loading="lazy" decoding="async">
-                <div class="caption">Staff ET Periode 22/23</div>
-            </div>
-            <div class="gallery-item">
-                <img src="Gallery/img3.webp" loading="lazy" decoding="async">
-                <div class="caption">Staff ET Periode 23/24</div>
-            </div>
-            <div class="gallery-item">
-                <img src="Gallery/dsc1.webp" loading="lazy" decoding="async">
-                <div class="caption">Staff ET Periode 24/25</div>
-            </div>
-        </div>
-    </section>
-        <!-- <section class="upcoming">
-            <h1>UPCOMING EVENT BY UKM WAPPIM</h1>
-            <container>
-                <div class="box">
-                    <h1>Welcoming Party</h1>
-                    <a href="https://economictraining.github.io/welcoming-party/">
-                        <div class="gallery-item">
-                            <img src="img/posterwp.PNG">
+            <div class="courses-layout">
+                <div class="dashboard">
+                    <div class="dashboard-header">
+                        <div>
+                            <p class="greeting">Selamat datang kembali, Salsabila!</p>
+                            <h3>Target minggu ini tinggal selangkah lagi.</h3>
                         </div>
-                    </a>
-                </div>
-                <div class="box">
-                    <h1>Pendidikan dan Pelatihan Dasar XXXI</h1>
-                    <a href="https://economictraining.github.io/Diksar-31/" target="_blank">
-                        <div class="gallery-item">
-                            <img src="./img/poster_diksar.png" loading="lazy" decoding="async">
+                        <button class="ghost-button">Lihat semua laporan</button>
+                    </div>
+                    <div class="dashboard-metrics">
+                        <article>
+                            <h4>Progress Rencana Belajar</h4>
+                            <div class="progress-bar">
+                                <span style="width: 78%"></span>
+                            </div>
+                            <p>78% dari modul minggu ini selesai.</p>
+                        </article>
+                        <article>
+                            <h4>Streak Konsistensi</h4>
+                            <div class="streak">
+                                <span>🔥</span>
+                                <strong>12 hari berturut-turut</strong>
+                            </div>
+                            <p>Tingkatkan ke 14 hari untuk bonus XP.</p>
+                        </article>
+                        <article>
+                            <h4>Mentor Terfavorit</h4>
+                            <div class="mentor">
+                                <img src="img/magnifying-glass.svg" alt="Avatar mentor">
+                                <div>
+                                    <strong>Rafi Nugraha</strong>
+                                    <p>Matematika Finansial</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="dashboard-lists">
+                        <div class="list-card">
+                            <header>
+                                <h4>Mata Pelajaran Favorit</h4>
+                                <a href="#">Atur</a>
+                            </header>
+                            <div class="subject-grid">
+                                <article>
+                                    <h5>Akuntansi Biaya</h5>
+                                    <p>Modul 5 dari 8</p>
+                                    <span class="tag">Live Class • 2 hari lagi</span>
+                                </article>
+                                <article>
+                                    <h5>Desain UI/UX</h5>
+                                    <p>12 video on-demand</p>
+                                    <span class="tag soft">Project Submission</span>
+                                </article>
+                                <article>
+                                    <h5>Ekonomi Mikro</h5>
+                                    <p>Latihan soal adaptif</p>
+                                    <span class="tag">Tryout akhir pekan</span>
+                                </article>
+                                <article>
+                                    <h5>Bahasa Inggris Profesional</h5>
+                                    <p>3 sesi private tersisa</p>
+                                    <span class="tag soft">Tutor Rizka</span>
+                                </article>
+                            </div>
                         </div>
-                    </a>
+                        <div class="list-card">
+                            <header>
+                                <h4>Jadwal Live Class</h4>
+                                <a href="#">Sinkronkan kalender</a>
+                            </header>
+                            <ul class="schedule-list">
+                                <li>
+                                    <div>
+                                        <strong>Sen, 20 Mei</strong>
+                                        <span>Strategi Bisnis Digital</span>
+                                    </div>
+                                    <span class="time">19.00 WIB</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <strong>Sel, 21 Mei</strong>
+                                        <span>Psikologi Belajar</span>
+                                    </div>
+                                    <span class="time">16.00 WIB</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <strong>Kam, 23 Mei</strong>
+                                        <span>Data Analytics Bootcamp</span>
+                                    </div>
+                                    <span class="time">20.00 WIB</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <strong>Sab, 25 Mei</strong>
+                                        <span>Intensif SBMPTN</span>
+                                    </div>
+                                    <span class="time">08.30 WIB</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </container> -->
+                <aside class="course-sidepanel">
+                    <div class="card compact">
+                        <header>
+                            <h4>Sesi Mendatang</h4>
+                            <button class="ghost-button">Lihat semua</button>
+                        </header>
+                        <ul class="upcoming-list">
+                            <li>
+                                <span class="tag">Mentoring</span>
+                                <div>
+                                    <strong>Coaching Finansial</strong>
+                                    <p>Dengan Kak Nia • 22 Mei, 15.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="tag soft">Grup Diskusi</span>
+                                <div>
+                                    <strong>Simulasi Olimpiade Ekonomi</strong>
+                                    <p>Panel Juara Nasional • 23 Mei, 19.30</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="tag">One-on-One</span>
+                                <div>
+                                    <strong>Review Portofolio UI</strong>
+                                    <p>Dengan Kak Rama • 24 Mei, 20.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card compact">
+                        <header>
+                            <h4>Insight Kemampuan</h4>
+                        </header>
+                        <div class="radar-insight">
+                            <div class="insight-metric">
+                                <span>💡</span>
+                                <div>
+                                    <strong>Analytical</strong>
+                                    <p>Level 8 / 10</p>
+                                </div>
+                            </div>
+                            <div class="insight-metric">
+                                <span>🎨</span>
+                                <div>
+                                    <strong>Kreatif</strong>
+                                    <p>Level 6 / 10</p>
+                                </div>
+                            </div>
+                            <div class="insight-metric">
+                                <span>🗣️</span>
+                                <div>
+                                    <strong>Komunikasi</strong>
+                                    <p>Level 9 / 10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card compact">
+                        <header>
+                            <h4>Rekomendasi untukmu</h4>
+                        </header>
+                        <ul class="recommendation-list">
+                            <li>
+                                <strong>Modul: Growth Marketing</strong>
+                                <p>Cocok untuk minatmu di Start-up &amp; Bisnis</p>
+                            </li>
+                            <li>
+                                <strong>Tryout UTBK Intensif</strong>
+                                <p>Raih skor target dengan paket adaptif</p>
+                            </li>
+                            <li>
+                                <strong>Series: Career Lab</strong>
+                                <p>Sesi live dengan HR experts tiap Jumat</p>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="competitions" aria-labelledby="competition-title">
+            <div class="section-heading">
+                <h2 id="competition-title">Platform Lomba – Feed ala media sosial</h2>
+                <p>Temukan kompetisi terbaru, lihat siapa saja yang sudah daftar, dan atur pengingat supaya tidak ketinggalan tenggat.</p>
+            </div>
+            <div class="competition-controls">
+                <div class="filter-buttons" role="tablist">
+                    <button class="filter-button active" data-filter="all">Semua</button>
+                    <button class="filter-button" data-filter="bisnis">Bisnis</button>
+                    <button class="filter-button" data-filter="teknologi">Teknologi</button>
+                    <button class="filter-button" data-filter="desain">Desain</button>
+                    <button class="filter-button" data-filter="sains">Sains</button>
+                </div>
+                <label class="sorter">Urutkan
+                    <select id="competition-sort">
+                        <option value="newest">Terbaru</option>
+                        <option value="deadline">Paling dekat deadline</option>
+                        <option value="popular">Paling populer</option>
+                    </select>
+                </label>
+            </div>
+            <div class="competition-feed" id="competition-feed">
+                <article class="competition-card" data-category="teknologi" data-date="2024-06-05" data-popularity="890">
+                    <header>
+                        <div>
+                            <h3>HackJam: AI for Impact</h3>
+                            <span class="tag">Teknologi</span>
+                        </div>
+                        <button class="ghost-button">Ikuti</button>
+                    </header>
+                    <p>Bangun solusi AI untuk isu kesehatan dan pendidikan. Mentoring langsung dari praktisi industri.</p>
+                    <ul class="meta">
+                        <li>Deadline: 5 Juni 2024</li>
+                        <li>750 tim terdaftar</li>
+                        <li>Hadiah Rp80 juta</li>
+                    </ul>
+                    <footer>
+                        <span class="avatars">👩🏻‍💻👨🏽‍💻👨🏻‍💻</span>
+                        <span class="timestamp">Diposting 2 jam lalu</span>
+                    </footer>
+                </article>
+                <article class="competition-card" data-category="bisnis" data-date="2024-05-28" data-popularity="540">
+                    <header>
+                        <div>
+                            <h3>Business Case League 2024</h3>
+                            <span class="tag">Bisnis</span>
+                        </div>
+                        <button class="ghost-button">Ikuti</button>
+                    </header>
+                    <p>Tantang dirimu memecahkan studi kasus industri FMCG dengan bimbingan panel profesional.</p>
+                    <ul class="meta">
+                        <li>Deadline: 28 Mei 2024</li>
+                        <li>420 tim terdaftar</li>
+                        <li>Hadiah Rp50 juta</li>
+                    </ul>
+                    <footer>
+                        <span class="avatars">👩🏼‍💼👨🏻‍💼</span>
+                        <span class="timestamp">Diposting kemarin</span>
+                    </footer>
+                </article>
+                <article class="competition-card" data-category="desain" data-date="2024-06-12" data-popularity="320">
+                    <header>
+                        <div>
+                            <h3>Visual Storytelling Challenge</h3>
+                            <span class="tag">Desain</span>
+                        </div>
+                        <button class="ghost-button">Ikuti</button>
+                    </header>
+                    <p>Buat kampanye visual untuk brand sustainable lokal. Upload moodboard dan prototype interaktif.</p>
+                    <ul class="meta">
+                        <li>Deadline: 12 Juni 2024</li>
+                        <li>190 tim terdaftar</li>
+                        <li>Hadiah Rp25 juta</li>
+                    </ul>
+                    <footer>
+                        <span class="avatars">🎨🖌️</span>
+                        <span class="timestamp">Diposting 4 jam lalu</span>
+                    </footer>
+                </article>
+                <article class="competition-card" data-category="sains" data-date="2024-05-25" data-popularity="610">
+                    <header>
+                        <div>
+                            <h3>Science Innovator Olympiad</h3>
+                            <span class="tag">Sains</span>
+                        </div>
+                        <button class="ghost-button">Ikuti</button>
+                    </header>
+                    <p>Kompetisi penelitian eksperimen dengan review panel akademisi dan akses laboratorium virtual.</p>
+                    <ul class="meta">
+                        <li>Deadline: 25 Mei 2024</li>
+                        <li>520 tim terdaftar</li>
+                        <li>Hadiah Rp60 juta</li>
+                    </ul>
+                    <footer>
+                        <span class="avatars">🧪🔬</span>
+                        <span class="timestamp">Diposting 3 hari lalu</span>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="marketplace" aria-labelledby="marketplace-title">
+            <div class="section-heading">
+                <h2 id="marketplace-title">Lapak Tutor – Marketplace yang siap bantu kapan pun</h2>
+                <p>Cari tutor sesuai kebutuhan, cek portofolio, dan pesan paket belajar langsung dari dasbor.</p>
+            </div>
+            <div class="tutor-controls">
+                <label class="search">
+                    <span class="icon">🔍</span>
+                    <input type="search" id="tutor-search" placeholder="Cari tutor, keahlian, atau kata kunci...">
+                </label>
+                <div class="chips" role="list">
+                    <button class="chip active" data-speciality="all">Semua</button>
+                    <button class="chip" data-speciality="saintek">Saintek</button>
+                    <button class="chip" data-speciality="soshum">Soshum</button>
+                    <button class="chip" data-speciality="uiux">UI/UX</button>
+                    <button class="chip" data-speciality="bahasa">Bahasa</button>
+                </div>
+            </div>
+            <div class="tutor-grid" id="tutor-grid">
+                <article class="tutor-card" data-speciality="saintek" data-name="Faris Wijaya">
+                    <header>
+                        <div>
+                            <h3>Faris Wijaya</h3>
+                            <p>Fisika &amp; Matematika SMA</p>
+                        </div>
+                        <span class="rating">4.9 ★</span>
+                    </header>
+                    <p>Eks pembina Olimpiade dengan pengalaman 7 tahun. Fokus pada pemahaman konsep dan latihan adaptif.</p>
+                    <ul>
+                        <li>Paket intensif UTBK • 12 sesi</li>
+                        <li>Tersedia jadwal malam</li>
+                    </ul>
+                    <footer>
+                        <span class="price">Mulai Rp185K/sesi</span>
+                        <button class="primary-button">Booking</button>
+                    </footer>
+                </article>
+                <article class="tutor-card" data-speciality="uiux" data-name="Rama Pratama">
+                    <header>
+                        <div>
+                            <h3>Rama Pratama</h3>
+                            <p>UI/UX &amp; Product Design</p>
+                        </div>
+                        <span class="rating">4.8 ★</span>
+                    </header>
+                    <p>Product Designer di startup unicorn. Bimbing dari riset, wireframe, hingga presentasi ke stakeholder.</p>
+                    <ul>
+                        <li>Kelas project-based • 6 minggu</li>
+                        <li>Include review portofolio</li>
+                    </ul>
+                    <footer>
+                        <span class="price">Mulai Rp250K/sesi</span>
+                        <button class="primary-button">Booking</button>
+                    </footer>
+                </article>
+                <article class="tutor-card" data-speciality="soshum" data-name="Nia Lestari">
+                    <header>
+                        <div>
+                            <h3>Nia Lestari</h3>
+                            <p>Ekonomi &amp; Bisnis</p>
+                        </div>
+                        <span class="rating">5.0 ★</span>
+                    </header>
+                    <p>Dosen tamu dan konsultan bisnis. Materi dibuat sesuai studi kasus nyata, cocok untuk persiapan kompetisi.</p>
+                    <ul>
+                        <li>Bootcamp studi kasus • 10 sesi</li>
+                        <li>Tersedia sesi mentoring karier</li>
+                    </ul>
+                    <footer>
+                        <span class="price">Mulai Rp220K/sesi</span>
+                        <button class="primary-button">Booking</button>
+                    </footer>
+                </article>
+                <article class="tutor-card" data-speciality="bahasa" data-name="Rizka Amanda">
+                    <header>
+                        <div>
+                            <h3>Rizka Amanda</h3>
+                            <p>Bahasa Inggris Profesional</p>
+                        </div>
+                        <span class="rating">4.7 ★</span>
+                    </header>
+                    <p>Pengajar IELTS bersertifikasi TESOL. Fokus pada speaking dan writing dengan simulasi wawancara.</p>
+                    <ul>
+                        <li>Paket IELTS Express • 8 sesi</li>
+                        <li>Feedback personal tiap pertemuan</li>
+                    </ul>
+                    <footer>
+                        <span class="price">Mulai Rp210K/sesi</span>
+                        <button class="primary-button">Booking</button>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="stories">
+            <div class="section-heading">
+                <h2>Suara dari komunitas Clovera</h2>
+                <p>Para pelajar, mentor, dan pemenang lomba berbagi cerita tentang perjalanan mereka.</p>
+            </div>
+            <div class="story-grid">
+                <article>
+                    <p>“Clovera Learn bantu aku atur jadwal belajar bareng lomba. Feed kompetisinya mirip timeline sosmed jadi gampang mantau.”</p>
+                    <footer>
+                        <strong>Reihan</strong>
+                        <span>Juara 1 Business Case League</span>
+                    </footer>
+                </article>
+                <article>
+                    <p>“Tutor marketplace-nya bikin aku bisa pilih mentor sesuai gaya belajar. Progress bar di kursus bikin makin semangat.”</p>
+                    <footer>
+                        <strong>Sinta</strong>
+                        <span>Mahasiswa FEB</span>
+                    </footer>
+                </article>
+                <article>
+                    <p>“Sebagai mentor, aku bisa langsung buka jadwal dan konfirmasi booking. Sistemnya terintegrasi dengan pembayaran.”</p>
+                    <footer>
+                        <strong>Kak Rizka</strong>
+                        <span>Tutor Bahasa Inggris</span>
+                    </footer>
+                </article>
+            </div>
         </section>
     </main>
 
-
-    <footer>
-        <div class="end">
-            <h1>WAPPIM HERE</h1>
-            <p style="color: #eee;">Contact us: etukmwappim@gmail.com</p>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <a class="brand" href="#home">
+                    <img src="img/fav_fix.png" alt="Logo Clovera Learn" class="brand-logo">
+                    <span>Clovera Learn</span>
+                </a>
+                <p>Bangun masa depanmu lewat pengalaman belajar yang personal, kompetitif, dan terhubung.</p>
+            </div>
+            <div>
+                <h4>Produk</h4>
+                <ul>
+                    <li><a href="#courses">Kursus Interaktif</a></li>
+                    <li><a href="#competitions">Kompetisi</a></li>
+                    <li><a href="#marketplace">Marketplace Tutor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Dukungan</h4>
+                <ul>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                    <li><a href="#">Kemitraan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p>Terima kurasi kelas, lomba, dan tips belajar setiap minggu.</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="nama@email.com" aria-label="Alamat email">
+                    <button type="submit" class="primary-button">Langganan</button>
+                </form>
+            </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024   
-        Economic Training of WAPPIM. All rights reserved.</p>
-        </div>
+        <p class="footer-note">© 2024 Clovera Learn. All rights reserved.</p>
     </footer>
-    
-   <script src="js.js"></script>
-</body>
 
+    <script src="script.js" defer></script>
+</body>
 </html>
